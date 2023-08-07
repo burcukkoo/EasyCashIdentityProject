@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/CustomerLayout/Index.cshtml";
+}
+<div class="right_col" role="main">
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h3>@DateTime.Now.ToShortDateString() - Exchange Rates</h3>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="">
+                    <div class="x_content">
+                        <div class="row">
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats">
+                                    <div class="icon">
+                                        <i class="fa fa-dollar" style="font-size: 50px; margin-right: 35px; "></i>
+
+                                        <i class="fa fa-try" style="font-size: 50px; margin-left: 35px; "></i>
+                                    </div>
+                                    <div class="count">@ViewBag.UsdToTry</div>
+
+                                    <h3>Dollar - TRY</h3>
+                                    <p>Current $ - ₺ Rate</p>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats">
+                                    <div class="icon">
+                                        <i class="fa fa-euro" style="font-size: 50px; margin-right: 35px;"></i>
+                                        <i class="fa fa-try" style="font-size: 50px; margin-left: 35px; "></i>
+                                    </div>
+                                    <div class="count">@ViewBag.EurToTry</div>
+
+                                    <h3>Euro - TRY</h3>
+                                    <p>Current € - ₺ Rate</p>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats">
+                                    <div class="icon">
+                                        <i class="fa fa-gbp" style="font-size: 50px; margin-right: 35px;"></i>
+                                        <i class="fa fa-try" style="font-size: 50px; margin-left: 35px; "></i>
+                                    </div>
+                                    <div class="count">@ViewBag.GbpToTry</div>
+
+                                    <h3>Sterling - TRY</h3>
+                                    <p>Current £ - ₺ Rate</p>
+                                </div>
+                            </div>
+                            <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <div class="tile-stats">
+                                    <div class="icon">
+                                        <i class="fa fa-dollar" style="font-size: 50px; margin-right: 35px; "></i>
+                                        
+                                        <i class="fa fa-euro" style="font-size: 50px; margin-left: 35px; "></i>
+                                    </div>
+                                    <div class="count">@ViewBag.UsdToEur</div>
+                                    <h3>Dollar - Euro</h3>
+                                    <p>Current $ - € Rate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

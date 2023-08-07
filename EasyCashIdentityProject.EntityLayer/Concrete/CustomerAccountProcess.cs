@@ -12,7 +12,11 @@ namespace EasyCashIdentityProject.EntityLayer.Concrete
         public  string ProcessType { get; set; }
         public decimal Amount { get; set; }
         public DateTime ProcessDate { get; set; }
-
+        public int? SenderID { get; set; }
+        public int? ReceiverID { get; set; }
+        public CustomerAccount SenderCustomer { get; set; } //gönderen/borçlandıran müşteri
+        public CustomerAccount ReceiverCustomer { get; set; } //alan/alacaklandıran müşteri
+        public string Description { get; set; }
     }
 
     /* id - işlem türü(gelen giden ödeme) - miktar - tarih - alıcı - gönderici */
